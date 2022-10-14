@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, follow" />
+    <meta name="description" content="">
+    <title>Mbadalafund - {% block title %}{% endblock %}</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png">
+
+    <!-- css -->
+    {% include 'includes/style.html' %}
+
+    <!-- specific page css -->
+    {% block stylesheet %}{% endblock %}
+</head>
+<body>
+
+    <div id="page" class="section">
+        {% include 'includes/header.html' %}
+
+        {% block content %} {% endblock %}
+
+        {% include 'includes/footer.html' %}
+    </div>
+
+    {% include 'includes/scripts.html' %}
+    {% block javascript %}{% endblock %}
+</body>
+</html>
