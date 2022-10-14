@@ -151,8 +151,8 @@ MEDIA_URL = '/media/'
 STATICFILES_DIRS = [BASE_DIR / 'static']
 
 if not DEBUG:
-	STATIC_ROOT = '/home/mbadalafund/public_html/static/'
-	MEDIA_ROOT = '/home/mbadalafund/public_html/media/'
+	STATIC_ROOT = '/home/mbadalaf/public_html/static/'
+	MEDIA_ROOT = '/home/mbadalaf/public_html/media/'
 else:
 	MEDIA_ROOT = 'media/'
 
