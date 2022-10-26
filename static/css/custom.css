@@ -1,0 +1,89 @@
+    .mbadala-section-title {
+    padding-bottom: 40px;
+  }
+  
+  .mbadala-section-title h2 {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0;
+    line-height: 1px;
+    margin: 0 0 5px 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #aaaaaa;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .mbadala-section-title h2::after {
+    content: "";
+    width: 120px;
+    height: 1px;
+    display: inline-block;
+    background: #178200;
+    margin: 4px 10px;
+  }
+  
+  .mbadala-section-title p {
+    margin: 0;
+    font-size: 1.5rem !important;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    color: #178200;
+  }
+
+  .mission-section{
+    background-color: #178200 !important;
+    margin-top: -40px !important;
+  }
+
+  .mbadala-section-title2 {
+    padding-bottom: 40px;
+  }
+  
+  .mbadala-section-title2 h2 {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0;
+    line-height: 1px;
+    margin: 0 0 5px 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .mbadala-section-title2 h2::after {
+    content: "";
+    width: 120px;
+    height: 1px;
+    display: inline-block;
+    background: #ffffff;
+    margin: 4px 10px;
+  }
+  
+  .mbadala-section-title2 p {
+    margin: 0;
+    font-size: 1.5rem !important;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    color: #ffffff;
+  }
+
+
+  .mbadalalist {
+    counter-reset: item;
+  }
+  .mbadalalist .list__item {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .mbadalalist .list__item:last-of-type {
+    margin-bottom: 0;
+  }
+  .mbadalalist .list__item:before {
+    content: counters(item, '.') '. ';
+    counter-increment: item;
+  }
+  

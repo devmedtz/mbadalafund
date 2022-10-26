@@ -1,33 +1,187 @@
+{% load static %}
 <!DOCTYPE html>
 <html class="no-js" lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Mbadalafund</title>
     <meta name="robots" content="noindex, follow" />
     <meta name="description" content="">
-    <title>Mbadalafund - {% block title %}{% endblock %}</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png">
-
-    <!-- css -->
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'images/favicon.png' %}">
     {% include 'includes/style.html' %}
 
-    <!-- specific page css -->
-    {% block stylesheet %}{% endblock %}
 </head>
+
 <body>
 
     <div id="page" class="section">
-        {% include 'includes/header.html' %}
+        <!-- Header Section Start -->
+        <div class="header-section header-transparent sticky-header section">
+            <div class="header-inner">
+                <div class="container position-relative">
+                    <div class="row justify-content-between align-items-center">
 
-        {% block content %} {% endblock %}
+                        <!-- Header Logo Start -->
+                        <div class="col-xl-2 col-auto order-0">
+                            <div class="header-logo">
+                                <a href="/">
+                                    <img class="dark-logo" src="{% static 'images/logo.png' %}" alt="Logo">
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Header Logo End -->
 
-        {% include 'includes/footer.html' %}
+                        <!-- Header Main Menu Start -->
+                        <div class="col-auto col-xl d-flex align-items-center justify-content-xl-center justify-content-end order-2 order-xl-1">
+                            <div class="menu-column-area d-none d-xl-block position-static">
+                                <nav class="site-main-menu">
+                                    <ul class="text-uppercase">
+                                        <li>
+                                            <a href="/"><span class="menu-text">Home</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="about.html"><span class="menu-text">About Us</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="contact-us.html"><span class="menu-text">Contact Us</span></a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <!-- Header Mobile Menu Toggle Start -->
+                            <div class="header-mobile-menu-toggle d-xl-none ml-sm-2">
+                                <button class="toggle">
+                                    <i class="icon-top"></i>
+                                    <i class="icon-middle"></i>
+                                    <i class="icon-bottom"></i>
+                                </button>
+                            </div>
+                            <!-- Header Mobile Menu Toggle End -->
+                        </div>
+                        <!-- Header Main Menu End -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header Section End -->
+
+        <!-- Main Search Start -->
+        <div class="main-search-active">
+            <div class="sidebar-search-icon">
+                <button class="search-close"><i class="pe-7s-close"></i></button>
+            </div>
+            <div class="sidebar-search-input">
+                <form action="#">
+                    <div class="form-search">
+                        <input id="search" class="input-text" value="" placeholder="" type="search">
+                        <button>
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+                </form>
+                <p class="form-description">Hit enter to search or ESC to close</p>
+            </div>
+        </div>
+        <!-- Main Search End -->
+
+        
+        {% block content %}
+            
+        {% endblock content %} 
+        <div class="footer-section section" data-bg-color="#3B295F">
+            <div class="container">
+
+                <!-- Footer Top Widgets Start -->
+                <div class="row  pb-2">
+                    <div class="col-md-6 mb-6" data-aos="fade-up">
+                        <!-- Contact Information Start -->
+                        <div class="contact-info" data-vivus-hover>
+                            <div class="icon">
+                                <img class="svgInject" src="{% static 'images/svg/linea/linea-basic-map.svg' %}" alt="">
+                            </div>
+                            <div class="info">
+                                <h3 class="title text-light">Our Locations</h3>
+                                <span class="info-text text-light"> 5 Bains Avenue, Masaki                                    
+                                     <br>
+                                     ,Dar es salaam.</span>
+                            </div>
+                        </div>
+                        <!-- Contact Information End -->
+                    </div>
+                    <div class="col-md-6 mb-6" data-aos="fade-up">
+                        <!-- Contact Information Start -->
+                        <div class="contact-info" data-vivus-hover>
+                            <div class="icon">
+                                <img class="svgInject" src="{% static 'images/svg/linea/linea-basic-mail-open-text.svg' %}" alt="">
+                            </div>
+                            <div class="info">
+                                <h3 class="title text-light"> Help Desk</h3>
+                                <span class="info-text text-light">
+                                    <a href="mailto:info@mbadala.co.tz
+                                    ">info@mbadala.co.tz
+                                    </a>  
+                                </span>
+                            </div>
+                        </div>
+                        <!-- Contact Information End -->
+                    </div>
+                </div>
+                <!-- Footer Top Widgets End -->
+
+                <!-- Footer Copyright Start -->
+                <div class="row pt-4">
+                    <div class="col">
+                        <p class="copyright">© <script>document.write(new Date().getFullYear())</script> <strong>Mbadalafund</strong> Developed by <a href="https://technologyhomesite.com/"><strong>Technology Homesite</strong></a>.</p>
+                    </div>
+                </div>
+                <!-- Footer Copyright End -->
+
+            </div>
+        </div>
+
+        <!-- Scroll Top Start -->
+        <a href="#" class="scroll-top" id="scroll-top">
+            <i class="arrow-top fal fa-long-arrow-up"></i>
+            <i class="arrow-bottom fal fa-long-arrow-up"></i>
+        </a>
+        <!-- Scroll Top End -->
     </div>
 
+    <div id="site-main-mobile-menu" class="site-main-mobile-menu">
+        <div class="site-main-mobile-menu-inner">
+            <div class="mobile-menu-header">
+                <div class="mobile-menu-logo">
+                    <a href="/"><img src="{% static 'images/logo.png' %}" alt=""></a>
+                </div>
+                <div class="mobile-menu-close">
+                    <button class="toggle">
+                        <i class="icon-top"></i>
+                        <i class="icon-bottom"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="mobile-menu-content">
+                <nav class="site-mobile-menu">
+                    <ul class="text-uppercase">
+                        <li>
+                            <a href="/"><span class="menu-text">Home</span></a>
+                        </li>
+                        <li>
+                            <a href="about.html"><span class="menu-text">About Us</span></a>
+                        </li>
+                        <li>
+                            <a href="contact-us.html"><span class="menu-text">Contact Us</span></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
     {% include 'includes/scripts.html' %}
-    {% block javascript %}{% endblock %}
 </body>
+
 </html>
