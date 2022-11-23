@@ -1,0 +1,109 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load widget_tweaks %}
+
+{% block title %}  {% endblock %} 
+
+{% block content %}
+<!-- Page Title Section Start -->
+<div class="page-title-section section section-padding-top" data-bg-color="#000" data-overlay="0.7">
+    <div class="page-breadcrumb position-static">
+        <div class="container">
+            <ul class="breadcrumb justify-content-center">
+                <li><a href="/">Home</a></li>
+                <li class="current">{{title}}</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- Page Title Section End -->
+
+<!-- Contact Form Section Start -->
+<div class="contact-form-section section section-padding-t90-b100" data-bg-color="#f8faff">
+    <div class="container">
+        <div class="row">
+            <div class="offset-lg-2 col-lg-8">
+                <div class="contact-form">
+                    <form action="{% url 'main:pitch' %}" method="post" novalidate enctype="multipart/form-data">
+                        {% csrf_token %}
+                        {% for hidden in form.hidden_fields %}
+                        {{ hidden }}
+                        {% endfor %}
+                        <div class="card-body">
+                            <div class="form-group mb-3">
+                                <label>Company Name </label>
+                                {% render_field form.company_name class="form-control" %}
+                            </div>
+                            <div class="form-group mb-3">
+                                <label>Email</label>
+                                {% render_field form.email class="form-control" %}
+                            </div>
+                            <div class="form-group mb-3">
+                                <label>Phone number</label>
+                                {% render_field form.phone class="form-control" %}
+                            </div>
+                            <div class="form-group mb-3">
+                                <label>Website</label>
+                                {% render_field form.website class="form-control" %}
+                            </div>
+                            <div class="form-group mb-3">
+                                <label>What is the current legal status of your company?</label>
+                                {% render_field form.status class="form-control" %}
+                            </div>
+                            <div class="form-group mb-3">
+                                <label>What is your primary activity? </label>
+                                {% render_field form.activity class="form-control" %}
+                            </div>
+                            <div class="form-group mb-3">
+                                <label>What is the current stage of your business?</label>
+                                {% render_field form.stage class="form-control" %}
+                            </div>
+                            <div class="form-group mb-3">
+                                <label>Company Summary</label>
+                                {% render_field form.company_summary rows="3" class="form-control" placeholder="Outline in simple terms what your product/service is and the specific problem you are solving for users. What is your market positioning vis a vis existing competition?  Highlight the key principles of your revenue model." %}
+                            </div>
+                            <div class="form-group mb-3">
+                                <label>Management Summary</label>
+                                {% render_field form.management_summary rows="3" class="form-control" placeholder="Who are the key members of your management team and how will their experience aid your success?  For each key figure on the Management Team, list their Name, Title, and give a short 3-5 line bio on their professional experience as it relates to your business." %}
+                            </div> 
+                            <div class="form-group mb-3">
+                                <label>Have you raised funds before? If Yes, how much?</label>
+                                {% render_field form.financial_information class="form-control" %}
+                            </div>
+                            <div class="form-group mb-3">
+                                <label>How much capital are you seeking?</label>
+                                {% render_field form.capital class="form-control" %}
+                            </div>
+                            <div class="form-group mb-3">
+                                <label>What type of capital are you seeking? Debt/Equity/Combined/Grant/Other </label>
+                                {% render_field form.capital_type class="form-control" %}
+                            </div>
+                            <div class="form-group mb-3">
+                                <label>Do you have financials for your venture - audited accounts/projections </label>
+                                {% render_field form.venture class="form-control" %}
+                            </div>  
+                            <div class="form-group mb-3">
+                                <label>What is the primary reason you are raising capital? </label>
+                                {% render_field form.reason class="form-control" %}
+                            </div>  
+                            <div class="form-group mb-3">
+                                <label>What is the current source of funds for your business venture</label>
+                                {% render_field form.current_source class="form-control" %}
+                            </div>                            
+                            <div class="form-group mb-3">
+                                <label>Please attach a PITCH Deck or Executive Summary </label>
+                                {% render_field form.pitch_deck class="form-control" %}
+                            </div>
+                            <p>
+                                Keep it short and concise. Think of how you can visually demonstrate the compelling nature of your proposition, how you will develop your business and the key ways in which you will deliver return to an investor.
+                            </p>                      
+                        </div> 
+                            <button type="submit" class="btn btn-primary btn-lg ml-3 mb-3"><i class="fa fa-check-square-o"></i> Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Contact Form Section End -->
+{% endblock %}

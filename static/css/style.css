@@ -1,68 +1,4 @@
 @charset "UTF-8";
-/*-----------------------------------------------------------------------------------
-
-    Template Name: Exomac – Corporate Business Bootstrap 5 Template
-    Version: 1.0
-
------------------------------------------------------------------------------------
-    
-    CSS INDEX
-    ===================
-	
-    01. Template default CSS
-    02. Template Spacing CSS
-    03. Plugin Custom CSS (Custom style to override plugin default style)
-        03.01. AOS Animation
-    04. Elements CSS
-        04.01 Accordion CSS
-        04.02 Brand CSS 
-        04.03 Breadcrumb CSS
-        04.04 Button CSS
-        04.05 CTA CSS
-        04.6 Form CSS
-        04.7 Funfact CSS
-        04.8 Icon Box CSS
-        04.9 Newsletter CSS
-        04.10 Pagination CSS
-        04.11 Team CSS
-    05. Header CSS
-        05.01 Main Menu CSS
-        05.02 Mobile Menu Toggle CSS
-        05.03 Mobile Menu CSS
-        05.04 Header Logo CSS
-        05.05 Search Box CSS
-    06. Intro CSS
-        06.01. Home One Intro CSS
-        06.02. Home Two Intro CSS
-    07. Titles CSS
-        07.01. Page Title CSS
-        07.02. Section Title CSS
-    08. Blog CSS
-        08.01. Blog One CSS
-        08.02. Blog Two CSS
-        08.03. Blog Details CSS
-    09. Pages CSS
-        12.01 About CSS
-        12.02 Portfolio CSS
-        12.03 Success CSS
-        12.04 Skill With Video CSS
-        12.05 Contact CSS
-        12.06 Work Details CSS
-    10. Testimonial CSS
-    11. Widget CSS
-    12. Footer CSS
-
-
-
-
------------------------------------------------------------------------------------*/
-/* Bootstrap Theming Variable CSS */
-/*!
- * Bootstrap v5.0.0-alpha2 (https://getbootstrap.com/)
- * Copyright 2011-2020 The Bootstrap Authors
- * Copyright 2011-2020 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- */
 @import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
 :root {
   --bs-blue: #0d6efd;
@@ -25607,8 +25543,7 @@ input[type="tel"] {
   width: 100%;
   min-height: 56px;
   padding: 3px 20px;
-  color: #748494;
-  border: 1px solid #F5F5F5;
+  color: #748494;  
   border-radius: 5px;
   outline: none;
   background-color: #F5F5F5; }
@@ -28863,7 +28798,6 @@ textarea {
   align-items: flex-start;
   padding: 45px 30px 50px;
   border-radius: 5px;
-  background-color: #fff;
   -webkit-box-shadow: 0 0 40px rgba(51, 51, 51, 0.1);
   box-shadow: 0 0 40px rgba(51, 51, 51, 0.1);
   -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);

@@ -86,4 +86,8 @@
     content: counters(item, '.') '. ';
     counter-increment: item;
   }
+
+  .page-title-section{
+    background-image: url(../images/hero-banner.jpg);
+  }
   

@@ -10,7 +10,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="{% static 'images/favicon.png' %}">
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'images/logo.png' %}">
     {% include 'includes/style.html' %}
 
 </head>
@@ -43,7 +43,7 @@
                                             <a href="/"><span class="menu-text">Home</span></a>
                                         </li>
                                         <li>
-                                            <a href="#"><span class="menu-text">About Us</span></a>
+                                            <a href="{% url 'main:team' %}"><span class="menu-text">Our Team</span></a>
                                         </li>
                                         <li>
                                             <a href="#"><span class="menu-text">Contact Us</span></a>
@@ -87,8 +87,6 @@
             </div>
         </div>
         <!-- Main Search End -->
-
-        
         {% block content %}
             
         {% endblock content %} 
@@ -182,6 +180,7 @@
         </div>
     </div>
     {% include 'includes/scripts.html' %}
+    {% include 'includes/toastr.html' %}
 </body>
 
 </html>
