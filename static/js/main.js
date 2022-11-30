@@ -197,6 +197,7 @@
         speed: 750,
         spaceBetween: 30,
         slidesPerView: 2,
+        autoplay:true,
         effect: 'fade',
         navigation: {
             nextEl: '.home-slider-next',

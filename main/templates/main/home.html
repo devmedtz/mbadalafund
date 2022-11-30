@@ -10,12 +10,19 @@
     <div class="intro-slider swiper-container">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-                <div class="intro-section section overlay" data-bg-image="{% static 'images/hero-banner.jpg' %}">
+                <div class="intro-section section overlay" data-bg-color="#000"
+                    data-bg-image="{% static 'images/hero-image/hero-2.jpg' %}">
+
                     <div class="container">
                         <div class="row row-cols-lg-1 row-cols-1">
+
                             <div class="col align-self-center">
                                 <div class="intro-content mt-xl-8 mt-lg-8 mt-md-8 mt-sm-8 mt-xs-8">
-                                    <h2 class="title">Investing for Impact </h2>                                 
+                                    <h2 class="title">Investing For Impact</h2>
+                                    <div class="desc">
+                                        <p>We boast a great team expertise and experience, vast local knowledge, adequate exposure to international landscape, and network of more than 30 Private Equity and Venture Capital investors globally</p>
+                                    </div>
+                                    <a href="{% url 'main:contact' %}" class="btn btn-primary btn-hover-secondary">Get Started</a>
                                 </div>
                             </div>
 
@@ -24,7 +31,60 @@
 
                 </div>
             </div>
-        </div>       
+            <div class="swiper-slide">
+                <div class="intro-section section overlay" data-bg-color="#000"
+                    data-bg-image="{% static 'images/hero-image/hero-1.jpg' %}">
+
+                    <div class="container">
+                        <div class="row row-cols-lg-1 row-cols-1">
+
+                            <!-- Intro One Content Start -->
+                            <div class="col align-self-center">
+                                <div class="intro-content mt-8">
+                                    <h2 class="title">Investing For Impact</h2>
+                                    <div class="desc">
+                                        <p>Generating longterm impact to local communities by investing in impact and scalable ventures</p>
+                                    </div>
+                                    <a href="{% url 'main:contact' %}"
+                                        class="btn btn-primary btn-hover-secondary">Get Started</a>
+                                </div>
+                            </div>
+                            <!-- Intro One Content End -->
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="intro-section section overlay" data-bg-color="#000"
+                    data-bg-image="{% static 'images/hero-image/hero-3.jpg' %}">
+
+                    <div class="container">
+                        <div class="row row-cols-lg-1 row-cols-1">
+
+                            <!-- Intro One Content Start -->
+                            <div class="col align-self-center max-mb-30">
+                                <div class="intro-content mt-8">
+                                    <h2 class="title">Investing For Impact</h2>
+                                    <div class="desc">
+                                        <p>We boast a great team expertise and experience, vast local knowledge, adequate exposure to international landscape, and network of more than 30 Private Equity and Venture Capital investors globally</p>
+                                    </div>
+                                    <a href="{% url 'main:contact' %}"
+                                        class="btn btn-primary btn-hover-secondary">Get Started</a>                                    
+                                </div>
+                            </div>
+                            <!-- Intro One Content End -->
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="home-slider-prev swiper-button-prev main-slider-nav"><i class="fal fa-angle-left"></i></div>
+        <div class="home-slider-next swiper-button-next main-slider-nav"><i class="fal fa-angle-right"></i>
+        </div>
     </div>
 </div>
 <!-- Slider/Intro Section End -->
@@ -583,6 +643,33 @@
     </div>
 
 </div>
+
+<!-- Newsletter Section Start -->
+<div class="section section-padding-t110-b120 newsletter-section" data-bg-color="#000" data-overlay="0.7"
+data-bg-image="{% static 'images/cta.jpg' %}">
+<div class="container">
+    <div class="row align-items-center">
+        <div class="col-lg-12">
+            <!-- Newsletter Content Start -->
+            <div class="newsletter-content">
+                <!-- Section Title Start -->
+                <div class="section-title color-light text-center" data-aos="fade-up">
+                    <h2 class="title">Let’s find out how to work together</h2>
+                    <p class="sub-title fz-18">Ready to start your Business with Us?</p>
+                </div>
+                <!-- Section Title End -->
+                <!-- Newsletter Form Start -->
+                <div class="newsletter-form">                   
+                        <a class="btn btn-primary btn-block btn-lg btn-hover-secondary rounded text-uppercase" href="{% url 'main:pitch' %}">Submit your pitch</a>               
+                </div>
+                <!-- Newsletter Form End -->
+            </div>
+            <!-- Newsletter Content End -->
+        </div>
+    </div>
+</div>
+</div>
+<!-- Newsletter Section End -->
 
 
 

@@ -24,6 +24,11 @@ def team(request):
     context = {'title':'Our Team',}
     return render(request, template_name, context)
 
+def contact(request):
+    template_name = 'main/contact.html'
+    context = {'title':'Contact Us',}
+    return render(request, template_name, context)
+
 def pitch(request):
     template_name = 'main/pitch.html'
     if request.POST:
